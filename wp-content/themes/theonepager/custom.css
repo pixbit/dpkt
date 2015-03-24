@@ -1,25 +1,203 @@
-/* 
+/*
 WOO CUSTOM STYLESHEET
 ---------------------
 
 Instructions:
 
-Add your custom styles in this file instead of style.css so it 
-is easier to update the theme. Simply copy an existing style 
+Add your custom styles in this file instead of style.css so it
+is easier to update the theme. Simply copy an existing style
 from style.css to this file, and modify it to your liking. */
 
 
-/* 
+/*
 GLOBAL STYLES
 ----------------
 Add styles beneath this line that you want to be applied across your entire site */
 
+@font-face {
+    font-family: 'Big Noodle';
+    src: url('http://www.dpkt.thinkpixbit.com/wp-content/themes/theonepager/assets/fonts/big_noodle_titling-webfont.eot');
+    src: url('http://www.dpkt.thinkpixbit.com/wp-content/themes/theonepager/assets/fonts/big_noodle_titling-webfont.eot?#iefix') format('embedded-opentype'),
+        url('http://www.dpkt.thinkpixbit.com/wp-content/themes/theonepager/assets/fonts/big_noodle_titling-webfont.woff') format('woff'),
+        url('http://www.dpkt.thinkpixbit.com/wp-content/themes/theonepager/assets/fonts/big_noodle_titling-webfont.ttf') format('truetype'),
+        url('http://www.dpkt.thinkpixbit.com/wp-content/themes/theonepager/assets/fonts/big_noodle_titling-webfont.svg#bignoodletitlingregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
-/* 
+@font-face {
+    font-family: 'Big Noodle Oblique';
+    src: url('http://www.dpkt.thinkpixbit.com/wp-content/themes/theonepager/assets/fonts/big_noodle_titling_oblique-webfont.eot');
+    src: url('http://www.dpkt.thinkpixbit.com/wp-content/themes/theonepager/assets/fonts/big_noodle_titling_oblique-webfont.eot?#iefix') format('embedded-opentype'),
+        url('http://www.dpkt.thinkpixbit.com/wp-content/themes/theonepager/assets/fonts/big_noodle_titling_oblique-webfont.woff') format('woff'),
+        url('http://www.dpkt.thinkpixbit.com/wp-content/themes/theonepager/assets/fonts/big_noodle_titling_oblique-webfont.ttf') format('truetype'),
+        url('http://www.dpkt.thinkpixbit.com/wp-content/themes/theonepager/assets/fonts/big_noodle_titling_oblique-webfont.svg#bignoodletitlingoblique') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p{
+	font-size: 25px;
+}
+
+h1.site-title {
+    font-size: 50px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Big Noodle', sans-serif;
+	color: white;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
+	text-decoration: none;
+}
+
+body {
+	color: white;
+	font-family: 'Big Noodle', sans-serif;
+}
+
+#header{
+	background-size: cover;
+	min-height: 600px;
+}
+
+#header .site-title a, #header .site-description a{
+	color: white;
+}
+
+#header #hgroup h1, #header #hgroup h2, #header #hgroup h3{
+	text-align: right;
+}
+
+#header .site-description{
+	font-family: 'Big Noodle', sans-serif;
+	color: white;
+}
+
+#header .site-title a:hover, #header .site-description a:hover {
+		text-decoration: none;
+}
+
+/* Forms */
+input[type=text],
+input.input-text,
+textarea,
+input.txt,
+input[type=tel],
+input[type=email],
+input[type=password] {
+	font-family: 'Big Noodle', sans-serif;
+}
+
+span.dropcap {
+	font-weight: normal;
+	font-size: 35px;
+	line-height: 50px;
+}
+
+.post .post-date-author, .type-page .post-date-author, .type-feature .post-date-author, .type-testimonial .post-date-author, .article-content .post-date-author{
+	display: none;
+}
+.post-category{
+	display: none;
+}
+
+.post header h1 a:link, .type-page header h1 a:link, .type-feature header h1 a:link, .type-testimonial header h1 a:link, .article-content header h1 a:link, .post header h1 a:visited, .type-page header h1 a:visited, .type-feature header h1 a:visited, .type-testimonial header h1 a:visited, .article-content header h1 a:visited{
+	color: white;
+	font-size: 50px;
+}
+
+/* Buttons (Includes WF chortcode buttons) */
+a.button, a.comment-reply-link, #commentform #submit, .submit, input[type=submit], input.button, button.button, #wrapper .woo-sc-button{
+	font-family: 'Big Noodle', sans-serif;
+	font-size: 25px;
+}
+ul.products li.product .add_to_cart_button{
+	padding: 10px 0 0 0;
+}
+ul.products li.product a.add_to_cart_button:hover{ color: white !important; }
+ul.products li.product a.add_to_cart_button.button:hover{
+	background: black;
+}
+
+#contact-area form textarea, #contact-area form input{
+	font-size: 2em;
+}
+
+#connect .social a{
+	background: #d2a7d3;
+}
+
+#content.home-widgets .widget_woo_component:nth-child(2n){
+	background: #777777;
+}
+
+#footer {
+	color: white;
+}
+
+#footer .footer-section {
+	font-size: 24px;
+}
+#footer.with-logo #copyright{
+	text-align: left;
+}
+#footer.with-logo #credit{
+	text-align: right;
+}
+
+ul.products li.product{
+	background: #d2a7d3;
+}
+ul.products li.product:hover h3{
+	color: black;
+}
+ul.products li.product h3 {
+	margin-bottom: 10px;
+	font-size: 30px;
+	line-height: 1;
+}
+
+ul.cart li a{
+	right: -8em;
+	background: #d2a7d3;
+}
+
+ul.cart li a:hover{
+	background: white;
+}
+
+ul.cart li a:before{
+	background: black;
+}
+
+ul.cart li a:hover:before{
+	background: black;
+}
+
+ul.products li.product .add_to_cart_button:before {
+	border: 5px solid #d2a7d3;
+	border-color: #d2a7d3 transparent transparent transparent;
+}
+
+ul.products .price .amount, .summary div[itemprop=offers] .price .amount, #home-hero .price .amount,
+.summary div[itemprop=offers] .price .amount{
+	width: 3em;
+	height: 3em;
+	padding-top: 1.2em;
+	font-size: 2em;
+	background: #d2a7d3;
+}
+ul.products .price .amount, .summary div[itemprop=offers] .price .amount, #home-hero .price .amount{
+	background: white;
+}
+
+/*
 DESKTOP STYLES
 -----------------
 Add styles inside the media query below that you only want to be applied to the desktop layout of your site */
 
 @media only screen and (min-width: 768px) {
-	/* Desktop styles go here */
+  /* Desktop styles go here */
 }
