@@ -203,6 +203,15 @@ Add styles inside the media query below that you only want to be applied to the 
 
 @media only screen and (min-width: 768px) {
   /* Desktop styles go here */
+  .gce-page-grid-626{
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* Desktop styles go here */
+  .gce-page-grid-621{
+    display: none;
+  }
 }
 
 .gce-page-grid .gce-calendar .gce-event-info {
@@ -241,4 +250,17 @@ table .alt-table-row td.gce-day-future, td.gce-day-future {
 
 .gce-page-grid .gce-calendar .gce-has-events {
   cursor: inherit;
+}
+
+.gce-calendar abbr {
+  font-size: 20px;
+  color: black;
+}
+
+a.gce-change-month, a.gce-change-month-list {
+  color: white;
+}
+
+.gce-page-grid .gce-calendar td {
+  background: white;
 }
