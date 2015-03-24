@@ -16,22 +16,22 @@ Add styles beneath this line that you want to be applied across your entire site
 
 @font-face {
     font-family: 'Big Noodle';
-    src: url('http://www.dumpphokingtruck.com/wp-content/themes/theonepager/assets/fonts/big_noodle_titling-webfont.eot');
-    src: url('http://www.dumpphokingtruck.com/wp-content/themes/theonepager/assets/fonts/big_noodle_titling-webfont.eot?#iefix') format('embedded-opentype'),
-        url('http://www.dumpphokingtruck.com/wp-content/themes/theonepager/assets/fonts/big_noodle_titling-webfont.woff') format('woff'),
-        url('http://www.dumpphokingtruck.com/wp-content/themes/theonepager/assets/fonts/big_noodle_titling-webfont.ttf') format('truetype'),
-        url('http://www.dumpphokingtruck.com/wp-content/themes/theonepager/assets/fonts/big_noodle_titling-webfont.svg#bignoodletitlingregular') format('svg');
+    src: url('/wp-content/themes/theonepager/assets/fonts/big_noodle_titling-webfont.eot');
+    src: url('/wp-content/themes/theonepager/assets/fonts/big_noodle_titling-webfont.eot?#iefix') format('embedded-opentype'),
+        url('/wp-content/themes/theonepager/assets/fonts/big_noodle_titling-webfont.woff') format('woff'),
+        url('/wp-content/themes/theonepager/assets/fonts/big_noodle_titling-webfont.ttf') format('truetype'),
+        url('/wp-content/themes/theonepager/assets/fonts/big_noodle_titling-webfont.svg#bignoodletitlingregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Big Noodle Oblique';
-    src: url('http://www.dumpphokingtruck.com/wp-content/themes/theonepager/assets/fonts/big_noodle_titling_oblique-webfont.eot');
-    src: url('http://www.dumpphokingtruck.com/wp-content/themes/theonepager/assets/fonts/big_noodle_titling_oblique-webfont.eot?#iefix') format('embedded-opentype'),
-        url('http://www.dumpphokingtruck.com/wp-content/themes/theonepager/assets/fonts/big_noodle_titling_oblique-webfont.woff') format('woff'),
-        url('http://www.dumpphokingtruck.com/wp-content/themes/theonepager/assets/fonts/big_noodle_titling_oblique-webfont.ttf') format('truetype'),
-        url('http://www.dumpphokingtruck.com/wp-content/themes/theonepager/assets/fonts/big_noodle_titling_oblique-webfont.svg#bignoodletitlingoblique') format('svg');
+    src: url('/wp-content/themes/theonepager/assets/fonts/big_noodle_titling_oblique-webfont.eot');
+    src: url('/wp-content/themes/theonepager/assets/fonts/big_noodle_titling_oblique-webfont.eot?#iefix') format('embedded-opentype'),
+        url('/wp-content/themes/theonepager/assets/fonts/big_noodle_titling_oblique-webfont.woff') format('woff'),
+        url('/wp-content/themes/theonepager/assets/fonts/big_noodle_titling_oblique-webfont.ttf') format('truetype'),
+        url('/wp-content/themes/theonepager/assets/fonts/big_noodle_titling_oblique-webfont.svg#bignoodletitlingoblique') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -40,8 +40,11 @@ p{
 	font-size: 25px;
 }
 
-h1.site-title {
-    font-size: 50px;
+body #wrapper #header .site-title a {
+  font: normal 50px 'Big Noodle', sans-serif;
+}
+body #wrapper #header .site-description {
+  font: italic bold 1.618em 'Big Noodle', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
