@@ -1,0 +1,5 @@
+header { padding-top: 20px; padding-bottom: 40px; background: white; }
+header.hide-top-bar { width: 100%; left: 0; position: fixed; top: 0; z-index: 99; opacity: 0; -webkit-transition: background-color 400ms ease-out,color 400ms ease-out,opacity 400ms ease-out; -moz-transition: background-color 400ms ease-out,color 400ms ease-out,opacity 400ms ease-out; -o-transition: background-color 400ms ease-out,color 400ms ease-out,opacity 400ms ease-out; transition: background-color 400ms ease-out,color 400ms ease-out,opacity 400ms ease-out; }
+header ul.title-area { padding-top: 44px; }
+header ul.right { min-height: 80px; padding: 44px 0 10px 0; }
+header ul.right li { width: 115px; }

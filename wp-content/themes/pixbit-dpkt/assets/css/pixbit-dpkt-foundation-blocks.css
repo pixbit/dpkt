@@ -1,0 +1,39 @@
+/** All Sections */
+/** Text Block */
+.text-section h1, .text-section h3, .text-section p, .text-section a { font-family: 'Big Noodle'; font-style: italic; }
+.text-section h1 { font-size: 50px; font-style: normal; line-height: 1; margin-top: 20px; margin-bottom: 0; }
+.text-section h1 strong { font-weight: 600; }
+.text-section h3.text-name { padding-left: 0; font-weight: 600; }
+.text-section p { font-size: 25px; float: left; padding-top: 3px; margin-bottom: 0; }
+.text-section p[class*=column] + [class*=column]:last-child { float: left; margin-bottom: 20px; }
+.text-section .buttonBoxDiv { padding-top: 20px; }
+.text-section .buttonBoxDiv a { font-size: 21px; font-weight: 600; }
+
+/** Button Block */
+.button-section a, .button-section span, .button-section h1, .button-section h2 { font-family: 'Big Noodle'; font-style: italic; line-height: 1; float: left; }
+.button-section a { font-size: 21px; font-weight: 600; }
+.button-section span { font-size: 71px; font-weight: 700; width: 50px; }
+.button-section h1, .button-section h2 { width: 420px; }
+.button-section h1 { font-size: 30px; font-weight: 600; padding-top: 8px; margin-bottom: 0; line-height: 1; }
+.button-section h2 { text-transform: uppercase; font-size: 19px; padding-top: 3px; }
+
+/** Photo Blocks */
+.photo-blocks-section [class*=block-grid-] > li { padding-top: 20px; padding-bottom: 20px; }
+
+/** Centered Photo Blocks */
+.centered-photo-blocks-section ul { list-style: none; display: block; text-align: center; margin: 0; }
+.centered-photo-blocks-section ul li { display: inline-block; }
+.centered-photo-blocks-section ul li p { padding-top: 20px; border-top: 1px solid black; }
+.centered-photo-blocks-section ul li:first-child { margin-right: 40px; }
+.centered-photo-blocks-section ul li:last-child { margin-left: 40px; }
+.centered-photo-blocks-section a, .centered-photo-blocks-section p { font-family: 'Big Noodle'; font-style: italic; font-size: 20px; }
+.centered-photo-blocks-section a { font-size: 21px; font-weight: 600; }
+.centered-photo-blocks-section .link { margin-top: 80px; }
+.centered-photo-blocks-section .lower-caption { padding-top: 20px; }
+
+/** Info Block */
+.info-section h2, .info-section p, .info-section ul { font-family: 'Big Noodle'; }
+.info-section h2 { font-size: 45px; font-weight: 600; margin-bottom: 15px; }
+.info-section p { font-style: italic; font-size: 22px; font-weight: 300; }
+.info-section ul { padding-top: 12px; font-size: 12px; font-weight: 600; text-transform: uppercase; list-style: none; margin-left: 0; }
+.info-section ul li { margin-bottom: 15px; }

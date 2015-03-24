@@ -1,0 +1,10 @@
+.ls-vpcontainer{
+  display: none;
+}
+.video-player{
+  z-index: 10;
+}
+
+.ls-slide a{
+  /*font-size: 20px;*/
+}

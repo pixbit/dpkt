@@ -1,0 +1,13 @@
+.buttonBox {
+  border: 7px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  line-height: normal;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+.buttonBox:hover {
+  background: rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+  color: white;
+}

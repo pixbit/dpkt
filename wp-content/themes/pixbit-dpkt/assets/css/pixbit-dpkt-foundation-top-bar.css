@@ -1,0 +1,5 @@
+header { background: black; }
+header.hide-top-bar { width: 100%; left: 0; position: fixed; top: 0; z-index: 99; opacity: 0; -webkit-transition: background-color 400ms ease-out,color 400ms ease-out,opacity 400ms ease-out; -moz-transition: background-color 400ms ease-out,color 400ms ease-out,opacity 400ms ease-out; -o-transition: background-color 400ms ease-out,color 400ms ease-out,opacity 400ms ease-out; transition: background-color 400ms ease-out,color 400ms ease-out,opacity 400ms ease-out; }
+header ul.right { min-height: 80px; padding: 0 0 10px 0; }
+header ul.right li { width: 115px; }
+header ul.right li a { font-size: 30px; text-align: center; }
