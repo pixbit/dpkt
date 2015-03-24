@@ -204,3 +204,23 @@ Add styles inside the media query below that you only want to be applied to the 
 @media only screen and (min-width: 768px) {
   /* Desktop styles go here */
 }
+
+.gce-page-grid .gce-calendar .gce-event-info {
+  display: block;
+}
+
+.gce-page-grid .gce-calendar td{ /* Day table cells */
+	text-align:left;
+  vertical-align: top;
+}
+
+
+
+/* .gce-event-info ul {
+  margin: 0 !important;
+} */
+
+.gce-event-info ul li {
+  margin: 0;
+  font-size: 20px;
+}
