@@ -214,13 +214,31 @@ Add styles inside the media query below that you only want to be applied to the 
   vertical-align: top;
 }
 
+.gce-list-event, .gce-tooltip-event {
+  background: #d2a7d3;
+}
 
-
-/* .gce-event-info ul {
-  margin: 0 !important;
-} */
+table .alt-table-row td.gce-day-past, td.gce-day-past,
+table .alt-table-row td.gce-today, td.gce-today,
+table .alt-table-row td.gce-day-future, td.gce-day-future {
+  background: white;
+  color: black;
+}
 
 .gce-event-info ul li {
   margin: 0;
   font-size: 20px;
+}
+
+.gce-month-title {
+  font-size: 70px;
+  color: #d2a7d3;
+}
+
+.gce-next, .gce-prev {
+  font-size: 40px;
+}
+
+.gce-page-grid .gce-calendar .gce-has-events {
+  cursor: inherit;
 }

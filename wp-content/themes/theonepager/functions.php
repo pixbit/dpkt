@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 /*-----------------------------------------------------------------------------------*/
 
 // WooFramework init
-require_once ( get_template_directory() . '/functions/admin-init.php' );	
+require_once ( get_template_directory() . '/functions/admin-init.php' );
 
 /*-----------------------------------------------------------------------------------*/
 /* Load the theme-specific files, with support for overriding via a child theme.
@@ -25,7 +25,7 @@ $includes = array(
 
 // Allow child themes/plugins to add widgets to be loaded.
 $includes = apply_filters( 'woo_includes', $includes );
-				
+
 foreach ( $includes as $i ) {
 	locate_template( $i, true );
 }
@@ -38,7 +38,27 @@ if ( is_woocommerce_activated() ) {
 /* You can add custom functions below */
 /*-----------------------------------------------------------------------------------*/
 
+/////////////////////////////////////////////////
+// Enqueue Scripts and Styles for Front-End //
+/////////////////////////////////////////////////
+function get_theme_assets() {
+  /////////////
+  // Lodash //
+  ////////////
+  wp_enqueue_script(
+    'lodash'
+    , get_stylesheet_directory_uri().'/bower_components/lodash/lodash.min.js'
+  );
 
+	////////////
+	// DPKT //
+	///////////
+	wp_enqueue_script(
+    'dpkt'
+    , get_stylesheet_directory_uri().'/dpkt.js'
+  );
+}
+add_action( 'wp_enqueue_scripts', 'get_theme_assets' );
 
 
 
