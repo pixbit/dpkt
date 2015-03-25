@@ -119,6 +119,7 @@ span.dropcap {
 a.button, a.comment-reply-link, #commentform #submit, .submit, input[type=submit], input.button, button.button, #wrapper .woo-sc-button{
 	font-family: 'Big Noodle', sans-serif;
 	font-size: 25px;
+  float: right;
 }
 ul.products li.product .add_to_cart_button{
 	padding: 10px 0 0 0;
@@ -188,8 +189,10 @@ ul.products li.product .add_to_cart_button:before {
 	border-color: #d2a7d3 transparent transparent transparent;
 }
 
-ul.products .price .amount, .summary div[itemprop=offers] .price .amount, #home-hero .price .amount,
+ul.products .price .amount,
+#home-hero .price .amount,
 .summary div[itemprop=offers] .price .amount{
+  color: black;
 	width: 3em;
 	height: 3em;
 	padding-top: 1.2em;
@@ -198,6 +201,151 @@ ul.products .price .amount, .summary div[itemprop=offers] .price .amount, #home-
 }
 ul.products .price .amount, .summary div[itemprop=offers] .price .amount, #home-hero .price .amount{
 	background: white;
+}
+
+.product_meta span {
+  font-size: 20px;
+  color: white;
+}
+
+.single-product .summary .product_meta a{
+  color: #d2a7d3;
+}
+
+.single-product .summary .single_add_to_cart_button{
+  background: #d2a7d3;
+}
+
+.single-product .summary .single_add_to_cart_button:hover{
+  background: white;
+  color: black;
+}
+
+.single-product table.variations .label,
+#payment .payment_methods li label {
+  font-size: 25px;
+}
+
+#payment .payment_methods li img{
+  display: none;
+}
+
+#payment .place-order .button {
+  font-size: 24px;
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.single-product table.variations select {
+  font-size: 25px;
+  height: 30px;
+}
+
+form.cart input.input-text.qty.text {
+  font-size: 30px;
+  line-height: 33px;
+  margin-top: 5px;
+  border: none;
+}
+
+input[type=text], input.input-text, textarea, input.txt, input[type=tel], input[type=email], input[type=password] {
+  font-size: 30px;
+  line-height: 33px;
+  margin-top: 5px;
+  border: none;
+}
+
+ul.order_details li,
+ul.order_details li strong,
+ul.order_details li.date,
+ul.order_details li.order,
+ul.order_details li.method,
+ul.order_details li span.amount {
+  font-size: 25px;
+  color: white;
+}
+
+address, .addresses .title {
+  font-size: 20px;
+}
+
+.quantity .qty {
+  font-size: 20px;
+}
+
+.woocommerce_message, .woocommerce_info, .woocommerce_error, .woocommerce-message, .woocommerce-info, .woocommerce-error{
+  padding: 50px;
+  color: black;
+  font-size: 25px;
+}
+.woocommerce_message:before, .woocommerce_info:before, .woocommerce_error:before, .woocommerce-message:before, .woocommerce-info:before, .woocommerce-error:before{
+  color: black;
+  top: 50px;
+  left: 10px;
+}
+
+#payment .payment_methods li .payment_box{
+  background: #777;
+  background-image: inherit;
+}
+
+table.cart .actions .button {
+  float: right;
+  margin: 0;
+  width: 200px;
+}
+
+table.cart .actions .coupon label{
+  font-size: 25px;
+}
+
+table.cart td.product-remove a {
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  line-height: 65px;
+  color: #FFF!important;
+  background: #000000;
+}
+
+a:hover, .post-more a:hover, .post-meta a:hover, .post p.tags a:hover{
+  color: white !important;
+}
+
+.woocommerce_message .button, .woocommerce_info .button, .woocommerce_error .button, .woocommerce-message .button, .woocommerce-info .button, .woocommerce-error .button{
+  font-size: 25px;
+  text-shadow: inherit;
+}
+
+table thead th,
+table tbody th,
+table tfoot th,
+table tfoot tr th,
+table tfoot tr td{
+  background: #777777;
+  color: white;
+  font-size: 25px;
+}
+
+table .alt-table-row td,
+table td{
+  background: #AAA;
+}
+
+td{
+  font-size: 25px;
+}
+
+.woocommerce table.cart td.product-name a,
+.woocommerce table.cart td.product-price span,
+.woocommerce table.cart td.product-subtotal span
+{
+  color: white;
+  font-size: 25px;
+}
+
+span.amount {
+  font-size: 25px;
 }
 
 .gce-page-grid .gce-calendar .gce-event-info {
