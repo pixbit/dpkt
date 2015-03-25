@@ -40,6 +40,10 @@ p{
 	font-size: 25px;
 }
 
+a {
+  color: #d2a7d3;
+}
+
 body #wrapper #header .site-title a {
   font: normal 50px 'Big Noodle', sans-serif;
 }
@@ -209,6 +213,20 @@ ul.products .price .amount, .summary div[itemprop=offers] .price .amount, #home-
   background: #d2a7d3;
 }
 
+.gce-list-event.gce-tooltip-event {
+  text-align: center;
+  font-size: 25px;
+}
+
+.gce-page-list .gce-list div,
+.gce-page-list .gce-list div span {
+  font-size: 25px;
+}
+
+.gce-tooltip-title {
+  display: none;
+}
+
 table .alt-table-row td.gce-day-past, td.gce-day-past,
 table .alt-table-row td.gce-today, td.gce-today,
 table .alt-table-row td.gce-day-future, td.gce-day-future {
@@ -241,12 +259,20 @@ table .alt-table-row td.gce-day-future, td.gce-day-future {
 
 a.gce-change-month, a.gce-change-month-list {
   color: white;
+  font-size: 25px;
 }
 
 .gce-page-grid .gce-calendar td {
   background: white;
 }
 
+.breadcrumb-trail {
+  font-size: 20px;
+}
+
+#top select {
+  font-size: 25px;
+}
 
 // Small screens
 @media only screen { } /* Define mobile styles */
