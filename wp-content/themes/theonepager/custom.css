@@ -219,11 +219,24 @@ ul.products .price .amount, .summary div[itemprop=offers] .price .amount, #home-
 }
 
 .gce-page-list .gce-list div,
-.gce-page-list .gce-list div span {
+.gce-page-list .gce-list div span,
+.gce-widget-list .gce-list div,
+.gce-widget-list .gce-list div span {
   font-size: 25px;
 }
 
-.gce-tooltip-title {
+.gce-widget-list .gce-list div,
+.gce-widget-list .gce-list div span {
+  font-size: 23px;
+  color: white;
+}
+
+.gce-widget-list .gce-list div span {
+  color: #CCC;
+}
+
+.gce-tooltip-title,
+.gce-widget-list .gce-list-title {
   display: none;
 }
 
@@ -266,19 +279,85 @@ a.gce-change-month, a.gce-change-month-list {
   background: white;
 }
 
+.home .gce-feed.gce-feed-626 {
+  margin-left: 0;
+}
+
 .breadcrumb-trail {
   font-size: 20px;
 }
 
 #top select {
-  font-size: 25px;
+  font-size: 18px;
+}
+
+#wrapper #top .nav a {
+  font-size: 23px;
+}
+
+#footer-widgets {
+  background: #777777;
+}
+
+.bottom-bar h3 {
+  margin: 0;
+  font-size: 22px;
+  float: left;
+}
+
+.widget {
+  color: white;
+}
+
+.widget h3 {
+  color: #FFF7F7;
+  font-size: 35px;
+}
+
+.widget a {
+  color: #d2a7d3;
+}
+
+.widget .tweets{
+  font-size: 23px;
+}
+
+.widget_woodojo_twitterprofile .avatar,
+.widget_woodojo_instagram ul li img {
+  -webkit-border-radius: inherit;
+  border-radius: inherit;
+}
+
+.widget_woodojo_twitterprofile p.stat {
+  background: #d2a7d3;
+}
+
+.widget_woodojo_twitterprofile p.stat {
+  width: 100px;
+  height: 80px;
+}
+
+.widget_woodojo_tweets ul li {
+  border-bottom: white 1px solid;
+}
+
+.widget ul.instagram-photos {
+  margin: 0;
+}
+
+.widget ul.instagram-photos a img:hover {
+  opacity: 1;
+}
+
+#footer-widgets .widget_woodojo_instagram ul li {
+  margin: 0 !important;
 }
 
 // Small screens
 @media only screen { } /* Define mobile styles */
 
 @media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
-  #gce-1{
+  #gce-1, #footer-widgets{
     display: none;
   }
 }
