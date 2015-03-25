@@ -196,24 +196,6 @@ ul.products .price .amount, .summary div[itemprop=offers] .price .amount, #home-
 	background: white;
 }
 
-/*
-DESKTOP STYLES
------------------
-Add styles inside the media query below that you only want to be applied to the desktop layout of your site */
-
-@media only screen and (min-width: 768px) {
-  /* Desktop styles go here */
-  .gce-page-grid-626{
-    display: none;
-  }
-}
-@media only screen and (max-width: 767px) {
-  /* Desktop styles go here */
-  .gce-page-grid-621{
-    display: none;
-  }
-}
-
 .gce-page-grid .gce-calendar .gce-event-info {
   display: block;
 }
@@ -264,3 +246,39 @@ a.gce-change-month, a.gce-change-month-list {
 .gce-page-grid .gce-calendar td {
   background: white;
 }
+
+
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) { /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+  #gce-1{
+    display: none;
+  }
+}
+
+// Medium screens
+@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+  #gce-1{
+    display: none;
+  }
+}
+
+// Large screens
+@media only screen and (min-width: 64.063em) { /* min-width 1025px, large screens */
+  #gce-2{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
