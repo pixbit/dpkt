@@ -1,4 +1,7 @@
 jQuery(function() {
+  ///////////////
+  // Calendar //
+  //////////////
   var heights = [];
 
   jQuery('.alt-table-row').each(function(){
@@ -10,4 +13,9 @@ jQuery(function() {
   jQuery('.alt-table-row').each(function(){
     jQuery(this).height(min_height);
   });
+
+  //////////////
+  // FitVids //
+  /////////////
+  jQuery(body).fitVids();
 });

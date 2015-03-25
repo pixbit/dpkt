@@ -50,6 +50,14 @@ function get_theme_assets() {
     , get_stylesheet_directory_uri().'/bower_components/lodash/lodash.min.js'
   );
 
+  /////////////
+  // Fitvids //
+  ////////////
+  wp_enqueue_script(
+    'fitvids'
+    , get_stylesheet_directory_uri().'/bower_components/FitVids/jquery.fitvids.js'
+  );
+
 	////////////
 	// DPKT //
 	///////////
